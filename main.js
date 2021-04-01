@@ -34,6 +34,7 @@ charlie.mostSkilledDev(bob)
 
 
 // Point.js
+
 // p1 est une instance de Point
 const p1 = new Point(1, 2)
 // p2 est une autre instance de Point
@@ -47,5 +48,5 @@ console.log(`###################\n`)
 
 // result from function distance
 
-console.log(`this is the distance between ${this.p1} and ${this.p2} ${p1.distance(p3)}`)
-console.log(p1.distance(p2))
+console.log(`distance between ${p1.distance(p3)}`)
+console.log(`distance between ${p1.distance(p2)}`)

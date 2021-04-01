@@ -4,7 +4,7 @@ class Point {
     this.y = y
   }
   show() {
-    console.log(`(${this.x}, ${this.y})`)
+    return(`(${this.x}, ${this.y})`)
   }
   isEqual(point) {
     return this.x === point.x && this.y === point.y ? true : false
