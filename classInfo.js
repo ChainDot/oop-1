@@ -25,13 +25,13 @@ class Human {
   }
   
   mostSkilledDev(name){
-    console.log(`${this.firstName} VS ${name.firstName}`)
+    return(`${this.firstName} VS ${name.firstName}`)
   if((this.language).length > (name.language).length){
-    console.log(`\t${this.firstName} knows more language than ${name.firstName}`)
+    return(`\t${this.firstName} knows more language than ${name.firstName}`)
   } else if ((this.language).length < (name.language).length){
-    console.log(`\t${name.firstName} knows more language than ${this.firstName}`)
+    return(`\t${name.firstName} knows more language than ${this.firstName}`)
   } else {
-    console.log(`\tit's a draw`)
+    return(`\tit's a draw`)
   }
   }
 
