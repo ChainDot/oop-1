@@ -7,30 +7,25 @@ class Human {
   }
   
   printInfo(){
-    console.log(`\tfirstname: ${this.firstName}`)
-    console.log(`\tLastname: ${this.lastName}`)
-    console.log(`\tAge: ${this.age}`)
-    console.log(`\tlanguage: ${this.language}`)
-  
+    return (
+    `firstname: ${this.firstName}\nLastname: ${this.lastName}\nAge: ${this.age}\nlanguage: ${this.language}`)
   }
   
   canVote(){
-    console.log(`Is ${this.firstName} can vote ?`)
-      if(this.age >= 18){
-      console.log(true)
+    if(this.age >= 18){
+      return (`Is ${this.firstName} can vote ?\n${true}`)
       } else {
-      console.log(false)
+      return(`Is ${this.firstName} can vote ?\n${false}`)
       }
   }
   
   mostSkilledDev(name){
-   console.log(`${this.firstName} VS ${name.firstName}`)
   if((this.language).length > (name.language).length){
-    return(`\t${this.firstName} knows more language than ${name.firstName}`)
+    return(`${this.firstName} VS ${name.firstName}\n\t${this.firstName} knows more language than ${name.firstName}`)
   } else if ((this.language).length < (name.language).length){
-    return(`\t${name.firstName} knows more language than ${this.firstName}`)
+    return(`${this.firstName} VS ${name.firstName}\n\t${name.firstName} knows more language than ${this.firstName}`)
   } else {
-    return(`\tit's a draw`)
+    return(`${this.firstName} VS ${name.firstName}\n\tit's a draw`)
   }
   }
 
